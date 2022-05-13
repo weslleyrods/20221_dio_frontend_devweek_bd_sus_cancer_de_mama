@@ -1,8 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-import { IncidenciaRoutingModule } from './incidencia-routing.module';
 import { IncidenciaComponent } from './incidencia/incidencia.component';
+import { IncidenciaRoutingModule } from './incidencia-routing.module';
+
+import {MatCardModule} from '@angular/material/card';
+import {MatSortModule} from '@angular/material/sort';
+
 
 
 @NgModule({
@@ -11,7 +15,9 @@ import { IncidenciaComponent } from './incidencia/incidencia.component';
   ],
   imports: [
     CommonModule,
-    IncidenciaRoutingModule
+    IncidenciaRoutingModule,
+    MatCardModule,
+    MatSortModule,
   ]
 })
 export class IncidenciaModule { }
