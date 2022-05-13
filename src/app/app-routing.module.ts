@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '', pathMatch: 'full', redirectTo:'incidencia'
+  },
+  {
     path: 'incidencia', //quando na url for digitada "/incidencia", será executado o caminho definido na arrow function, ou seja, as informações do modulo secundario.
     loadChildren: () => {
       return import('./incidencia/incidencia.module')
